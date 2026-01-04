@@ -28,7 +28,7 @@ def min_cost_to_connect_cables(cables):
         connection_cost = first + second
         total_cost += connection_cost
         
-        # Додаємо новий кабель назад у купу
+        # Додаємо новий кабель назад в купу
         heapq.heappush(cables, connection_cost)
     
     return total_cost
